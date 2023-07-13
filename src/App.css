@@ -3,10 +3,11 @@
 }
 
 .headder{
-  border-bottom: 1px solid #949494;
+  border-bottom: 1px solid #94949480;
+
   display: flex;
   justify-content: space-between;
-  margin-bottom: 4rem;
+  margin-bottom: 3.5rem;
 }
 
 .headderLeft,
@@ -53,7 +54,7 @@
   margin-right: 1.5rem;
   width: 1px;
   height: 30px;
-  background-color: #949494;
+  background-color: #94949480;
 }
 
 #signIn {
@@ -66,18 +67,19 @@
   max-width: 900px;
   width: 100%;
   margin: 0 auto;
+  display: flex;
 }
 
 .searchBar{
-  
   display: flex;
+  flex-grow: 1;
 }
 
 .searchField{
   display: flex;
   margin-right: 0.875rem;
   margin-bottom: 1rem;
-  flex: 1;
+  flex-grow: 1;
   text-align: left;
   border: 1px solid #949494;
   border-radius: 0.5rem;
@@ -90,4 +92,59 @@
   line-height: 1.125rem;
   word-break: keep-all;
   white-space: nowrap;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.searchField>input{
+  border: none;
+  padding: 0 1.5rem 0 0;
+  color: #2d2d2d;
+  font-weight: 400;
+  font-size: 0.875rem;
+  letter-spacing: 0;
+  flex: 1
+}
+
+.searchField>div{
+  display: inline-flex;
+  justify-self: flex-end;
+}
+
+.searchImg{
+  opacity: 50%;
+  height: 17px;
+}
+
+#submit{
+  background-color: #2557a7;
+  color: white;
+  font-weight: 700;
+  font-size: 0.875rem;
+  cursor: pointer;
+  letter-spacing: 0;
+  margin: 0 0 1rem;
+  text-align: center;
+  flex-shrink: 0;
+  padding: 0.75rem 1rem;
+  box-sizing: border-box;
+  display: block;
+  box-shadow: none;
+  min-width: 94px;
+  max-width: 100px;
+}
+
+.invite{
+  display: flex;
+  justify-content: space-around;
+}
+
+.content > div{
+  margin:auto;
+  max-width: fit-content;
+  padding: 0.5rem;
+}
+
+#dash{
+  margin: 0 3px;
 }
